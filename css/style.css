@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #7b1834;
+  --color-primary-dark: #551024;
+
+  --color-blue: #8fa8c3;
+  --color-blue-light: #dce6f0;
+  --color-blue-dark: #344b63;
+
+  --color-background: #f4f7fa;
+  --color-surface: #ffffff;
+
+  --color-text: #202936;
+  --color-text-light: #5c6875;
+
+  --color-border: #c9d5df;
+
+  --shadow-small: 0 0.25rem 1rem rgba(32, 41, 54, 0.08);
+
+  --radius-small: 0.5rem;
+  --radius-medium: 1rem;
+
+  --spacing-small: 0.75rem;
+  --spacing-medium: 1.5rem;
+  --spacing-large: 3rem;
+}
