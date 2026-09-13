@@ -23,15 +23,16 @@
     />
 
     <meta property="og:image" content="img/preview.jpg" />
+    <meta property="og:type" content="website" />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body id="top">
     <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
     <header class="header">
   <div class="header__container">
-    <a class="header__logo" href="#about">TB</a>
+    <a class="header__logo" href="#about">ТБ</a>
 
     <nav class="nav" aria-label="Головна навігація">
       <details class="nav__menu">
@@ -369,6 +370,59 @@
         </p>
       </article>
     </div>
+    <div class="books__table-wrapper">
+  <table class="books__table">
+    <caption class="books__table-caption">
+      Коротко про мої улюблені книги
+    </caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Назва</th>
+        <th scope="col">Автор</th>
+        <th scope="col">Жанр</th>
+        <th scope="col">Моя оцінка</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Із крові і попелу</td>
+        <td>Дженніфер Л. Арментроут</td>
+        <td>Фентезі, романтика</td>
+        <td>10/10</td>
+      </tr>
+
+      <tr>
+        <td>Королівство плоті й вогню</td>
+        <td>Дженніфер Л. Арментроут</td>
+        <td>Фентезі, романтика</td>
+        <td>9/10</td>
+      </tr>
+
+      <tr>
+        <td>Четверте крило</td>
+        <td>Ребекка Яррос</td>
+        <td>Фентезі</td>
+        <td>10/10</td>
+      </tr>
+
+      <tr>
+        <td>Залізне полум’я</td>
+        <td>Ребекка Яррос</td>
+        <td>Фентезі</td>
+        <td>9/10</td>
+      </tr>
+
+      <tr>
+        <td>Залишся поряд</td>
+        <td>Анна Савас</td>
+        <td>Романтика</td>
+        <td>8/10</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
   </div>
 </section>
 <section class="music" id="music">
@@ -530,7 +584,22 @@
         </p>
       </article>
     </div>
+            <figure class="sport__photo">
+        <img
+            class="sport__image"
+            src="img/sport.jpg"
+            alt="Похід у гори"
+             loading="lazy"
+        />
+
+        <figcaption class="sport__caption">
+            Походи в гори — один із моїх улюблених видів активного відпочинку.
+            Це можливість поєднати фізичну активність, красиві краєвиди
+            та нові враження.
+        </figcaption>
+        </figure>
   </div>
+
 </section>
 <section class="travel" id="travel">
   <div class="travel__container">
@@ -541,44 +610,74 @@
       яскраві спогади.
     </p>
 
-    <div class="travel__gallery">
-      <figure class="travel__item">
-        <div class="travel__placeholder">
-          Фото буде додано пізніше
-        </div>
-        <figcaption class="travel__caption">
-          Говерла — одна з найвідоміших вершин Українських Карпат.
-        </figcaption>
-      </figure>
+   <div class="travel__gallery">
 
-      <figure class="travel__item">
-        <div class="travel__placeholder">
-          Фото буде додано пізніше
-        </div>
-        <figcaption class="travel__caption">
-          Спліт-місто в Хорватії з цікавою архітектурою, місцинами і чудовими пляжами. 
-          Чисте та тепле море.
-        </figcaption>
-      </figure>
+  <figure class="travel__item">
+    <img
+      class="travel__image"
+      src="img/travel-carpathians.jpg"
+      alt="Карпати"
+      loading="lazy"
+    />
 
-      <figure class="travel__item">
-        <div class="travel__placeholder">
-          Фото буде додано пізніше
-        </div>
-        <figcaption class="travel__caption">
-          Львів — місто, де люблю гуляти та знаходити нові атмосферні місця.
-        </figcaption>
-      </figure>
-    </div>
+    <figcaption class="travel__caption">
+      <h3 class="travel__name">Карпати</h3>
+
+      <p class="travel__description">
+        Говерла — одна з найвідоміших вершин Українських Карпат.
+      </p>
+    </figcaption>
+  </figure>
+
+
+  <figure class="travel__item">
+    <img
+      class="travel__image"
+      src="img/travel-croatia.jpg"
+      alt="Узбережжя Хорватії"
+      loading="lazy"
+    />
+
+    <figcaption class="travel__caption">
+      <h3 class="travel__name">Хорватія</h3>
+
+      <p class="travel__description">
+        Спліт — місто з цікавою архітектурою, красивими місцями
+        та чудовими пляжами. Особливо сподобалося чисте й тепле море.
+      </p>
+    </figcaption>
+  </figure>
+
+
+  <figure class="travel__item">
+    <img
+      class="travel__image"
+      src="img/travel-lviv.jpg"
+      alt="Львів"
+      loading="lazy"
+    />
+
+    <figcaption class="travel__caption">
+      <h3 class="travel__name">Львів</h3>
+
+      <p class="travel__description">
+        Львів — місто, де люблю гуляти, відкривати нові заклади
+        та знаходити атмосферні місця.
+      </p>
+    </figcaption>
+  </figure>
+
+</div>
   </div>
 </section>
+
 <section class="projects" id="projects">
   <div class="projects__container">
     <h2 class="projects__title">Проєкти та досягнення</h2>
 
     <div class="projects__grid">
       <article class="projects__card">
-        <h3 class="projects__name">Сайт «MysticHub"</h3>
+        <h3 class="projects__name">Сайт «MysticHub»</h3>
         <p class="projects__description">
           Працювала над дизайном сайту для навчального командного
           вебпроєкту. Використовувала Figma та
@@ -595,10 +694,10 @@
       </article>
 
       <article class="projects__card">
-        <h3 class="projects__name">Анкета користувача</h3>
+        <h3 class="projects__name">Посвідчення водія</h3>
         <p class="projects__description">
-          Створила навчальний застосунок у Windows Forms мовою C# з
-          полями введення, вибором параметрів та відображенням анкети.
+          Самостійно отримала посвідчення водія та вже пів року 
+          спокійно їжджу за кермом.
         </p>
       </article>
 
@@ -641,50 +740,125 @@
     </ol>
   </div>
 </section>
+
 <section class="facts" id="facts">
   <div class="facts__container">
     <h2 class="facts__title">Цікаві факти про мене</h2>
 
     <div class="facts__content">
+
       <details class="facts__item">
-        <summary class="facts__question">Що мені подобається найбільше?</summary>
+        <summary class="facts__question">
+          Поєдную навчання та роботу
+        </summary>
+
         <p class="facts__answer">
-          Люблю поєднувати творчість і технології, тому мені цікаві
-          веброзробка, дизайн та робота з візуальною частиною проєктів.
+          Люблю бути активною та пробувати себе у різних сферах,
+          тому намагаюся поєднувати університет, роботу та власний розвиток.
         </p>
       </details>
 
       <details class="facts__item">
-        <summary class="facts__question">Який відпочинок я люблю?</summary>
+        <summary class="facts__question">
+          Мені подобається дизайн
+        </summary>
+
         <p class="facts__answer">
-          Найкраще відпочиваю на прогулянках, у подорожах, у горах або
-          за хорошою книгою.
+          Найбільше у проєктах мене захоплює візуальна частина:
+          кольори, композиція, оформлення та створення зручних інтерфейсів.
         </p>
       </details>
 
       <details class="facts__item">
-        <summary class="facts__question">Що мене мотивує?</summary>
+        <summary class="facts__question">
+          Я піднімалася на Говерлу
+        </summary>
+
         <p class="facts__answer">
-          Мене мотивує відчуття прогресу, нові навички та можливість
-          створювати щось власне.
+          Підйом на Говерлу був однією з моїх цілей.
+          Люблю гори за красиві краєвиди, атмосферу та відчуття після підйому.
         </p>
       </details>
+
+      <details class="facts__item">
+        <summary class="facts__question">
+          Люблю довгі прогулянки
+        </summary>
+
+        <p class="facts__answer">
+          Можу довго гуляти містом, відкривати нові місця
+          та просто відпочивати від навчання і справ.
+        </p>
+      </details>
+
+      <details class="facts__item">
+        <summary class="facts__question">
+          Моє улюблене читання — фентезі
+        </summary>
+
+        <p class="facts__answer">
+          Найбільше люблю фентезі та романтичні історії
+          з атмосферним світом, сильними героями та захопливим сюжетом.
+        </p>
+      </details>
+
+      <details class="facts__item">
+        <summary class="facts__question">
+          Цікавлюся UI/UX
+        </summary>
+
+        <p class="facts__answer">
+          Хочу краще опанувати Figma, розвивати навички UI/UX-дизайну
+          та створювати власні макети й проєкти.
+        </p>
+      </details>
+
+      <details class="facts__item">
+        <summary class="facts__question">
+          Люблю подорожувати
+        </summary>
+
+        <p class="facts__answer">
+          Мені подобається відкривати нові міста й країни,
+          відпочивати біля моря та збирати нові враження з кожної поїздки.
+        </p>
+      </details>
+
     </div>
   </div>
 </section>
+
 <section class="quote" id="quote">
   <div class="quote__container">
-    <h2 class="quote__title">Улюблена цитата</h2>
+    <h2 class="quote__title">Улюблені цитати</h2>
 
-    <blockquote class="quote__text">
-      <p>
-        Думай, що говориш, говори, що думаєш
-      </p>
+   <div class="quote__list">
 
-      <cite class="quote__author">Невідомий автор</cite>
-    </blockquote>
+  <blockquote class="quote__text">
+    <p>
+      Не обов’язково бачити весь шлях. Достатньо знати, у якому напрямку
+      хочеш рухатися, і не боятися зробити наступний крок.
+    </p>
+  </blockquote>
+
+  <blockquote class="quote__text">
+    <p>
+      Не бійся починати з малого. Великі результати складаються
+      з маленьких кроків, які ти робиш щодня.
+    </p>
+  </blockquote>
+
+  <blockquote class="quote__text">
+    <p>
+      Розвиток починається там, де з’являється бажання спробувати
+      те, чого ти ще не вмієш.
+    </p>
+  </blockquote>
+
+</div>
   </div>
 </section>
+
 <section class="contacts" id="contacts">
   <div class="contacts__container">
     <h2 class="contacts__title">Контакти</h2>
@@ -693,15 +867,17 @@
       Якщо хочете зв'язатися зі мною, можете написати через форму нижче.
     </p>
 
-    <form class="contacts__form">
+    <form class="contacts__form" action="#" method="post">
       <div class="contacts__field">
         <label class="contacts__label" for="name">Ім'я</label>
-        <input
-          class="contacts__input"
-          type="text"
-          id="name"
-          name="name"
-          required
+       <input
+        class="contacts__input"
+        type="text"
+        id="name"
+        name="name"
+        autocomplete="name"
+        minlength="2"
+        required
         />
       </div>
 
@@ -712,18 +888,20 @@
           type="email"
           id="email"
           name="email"
+          autocomplete="email"
           required
         />
       </div>
 
       <div class="contacts__field">
         <label class="contacts__label" for="message">Повідомлення</label>
-        <textarea
-          class="contacts__textarea"
-          id="message"
-          name="message"
-          rows="5"
-          required
+       <textarea
+        class="contacts__textarea"
+        id="message"
+        name="message"
+        rows="5"
+        minlength="10"
+        required
         ></textarea>
       </div>
 
@@ -733,16 +911,89 @@
     </form>
   </div>
 </section>
+
 </main>
 <footer class="footer">
   <div class="footer__container">
-    <p class="footer__text">
-      © 2026 Таня. Студентське портфоліо.
-    </p>
 
-    <a class="footer__link" href="#about">
-      Повернутися нагору
-    </a>
+    <div class="footer__top">
+      <div class="footer__info">
+        <a class="footer__logo" href="#top">ТВ</a>
+
+        <p class="footer__text">
+          Дякую, що переглянули моє портфоліо.
+          Тут я зібрала трохи про себе, свої інтереси,
+          навчання та цілі.
+        </p>
+      <div class="footer__socials">
+
+  <a
+    class="footer__social-link"
+    href="https://github.com/Bryk-Tetiana"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+  >
+    <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.04-.02-1.89-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.94c.85 0 1.71.12 2.51.36 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.81-4.57 5.06.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.83 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"
+      />
+    </svg>
+  </a>
+
+  <a
+    class="footer__social-link"
+    href="https://www.instagram.com/_tanya_bryk_"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm4.75-3.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"
+      />
+    </svg>
+  </a>
+
+  <a
+    class="footer__social-link"
+    href="https://t.me/tanushaaa26"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Telegram"
+  >
+    <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M21.6 3.2 18.4 19c-.24 1.12-.87 1.39-1.76.87l-4.88-3.59-2.35 2.26c-.26.26-.48.48-.98.48l.35-4.97 9.04-8.17c.39-.35-.09-.55-.61-.2L6.04 12.71 1.23 11.2c-1.05-.33-1.07-1.05.22-1.55L20.26 2.4c.87-.32 1.63.2 1.34.8Z"
+      />
+    </svg>
+  </a>
+
+</div>
+      </div>
+
+      <nav class="footer__nav" aria-label="Навігація у футері">
+        <a class="footer__link" href="#about">Про мене</a>
+        <a class="footer__link" href="#education">Освіта</a>
+        <a class="footer__link" href="#skills">Навички</a>
+        <a class="footer__link" href="#projects">Проєкти</a>
+        <a class="footer__link" href="#contacts">Контакти</a>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        © 2026 Таня Брик. Усі права захищені.
+      </p>
+
+      <a class="footer__top-link" href="#top">
+        ↑ На початок
+      </a>
+    </div>
+
   </div>
 </footer>
   </body>
