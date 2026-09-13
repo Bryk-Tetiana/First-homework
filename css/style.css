@@ -320,6 +320,17 @@ section {
   opacity: 0.9;
 }
 
+@media (max-width: 767px) {
+  .about::before {
+    width: 9rem;
+    height: 9rem;
+
+    right: -7rem;
+    top: 45%;
+    opacity: 0.65;
+  }
+}
+
 .about::after {
   content: "✦";
 
@@ -1274,7 +1285,42 @@ section {
 .books__table tbody tr:hover {
   background-color: var(--color-blue-light);
 }
+.books__covers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
 
+  margin-bottom: 3rem;
+}
+
+.books__cover {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+
+  border-radius: 1rem;
+  box-shadow: var(--shadow-small);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.books__cover:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: var(--shadow-medium);
+}
+@media (min-width: 768px) {
+  .books__covers {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .books__covers {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
 /* =========================
    MUSIC
 ========================= */
@@ -1569,6 +1615,16 @@ background:
   color: var(--color-text);
   line-height: 1.6;
 }
+
+.movies__poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+
+  border-radius: 1rem;
+  margin-bottom: 1.25rem;
+}
+
 
 /* =========================
    SPORT
@@ -2710,20 +2766,19 @@ background:
   }
 
   .about__photo {
-    display: block;
+  display: block;
+  position: relative;
 
-    position: relative;
+  width: min(100%, 28rem);
+  height: auto;
 
-    margin: 0;
+  margin: 0;
 
-    border-radius:
-      45% 45% 1.5rem 1.5rem;
+  border-radius: 45% 45% 1.5rem 1.5rem;
+  overflow: hidden;
 
-    overflow: hidden;
-
-    box-shadow: var(--shadow-medium);
-  }
-
+  box-shadow: var(--shadow-medium);
+}
   .about__image {
     width: 100%;
 
@@ -3012,5 +3067,19 @@ background:
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+
+/* М'які навички на телефоні */
+
+@media (max-width: 767px) {
+  .skills__soft-list {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__soft-item {
+    width: 100%;
+    text-align: center;
   }
 }
