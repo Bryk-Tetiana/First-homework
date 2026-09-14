@@ -25,6 +25,7 @@
     <meta property="og:image" content="img/preview.jpg" />
     <meta property="og:type" content="website" />
 
+    <link rel="icon" href="img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -118,61 +119,106 @@
       </div>
 
       <figure class="about__photo">
-        <img
-          class="about__image"
-          src="img/my-photo.jpg"
-          alt="Фото Тані"
-          width="600"
-          height="800"
-        />
-      </figure>
+        <picture>
+            <source
+            media="(max-width: 767px)"
+            srcset="img/my-photo-mobile.jpg"
+            />
+
+            <img
+            class="about__image"
+            src="img/my-photo.jpg"
+            alt="Фото Тані"
+            width="1920"
+            height="2560"
+            />
+        </picture>
+        </figure>
     </div>
   </section>
+
   <section class="school" id="education">
   <div class="school__container">
     <h2 class="school__title">Освіта: школа</h2>
 
     <article class="school__content">
-      <h3 class="school__name">Великодідушицький ліцей</h3>
+      <div class="school__info">
+        <h3 class="school__name">Великодідушицький ліцей</h3>
 
-      <p class="school__years">2013–2024</p>
+        <p class="school__years">
+        <time datetime="2013">2013</time>–<time datetime="2024">2024</time>
+        </p>
 
-      <p class="school__description">
-        Навчалася у школі рідного села у Львівській області. Шкільні роки дали мені хорошу
-        базу та допомогли визначитися з майбутнім напрямом навчання.
-      </p>
+        <p class="school__description">
+          Навчалася у школі рідного села у Львівській області.
+          Шкільні роки дали мені хорошу базу та допомогли
+          визначитися з майбутнім напрямом навчання.
+        </p>
+      </div>
+
+      <figure class="school__photo">
+       <img
+        class="school__image"
+        src="img/school-1.jpg"
+        alt="Фото зі шкільних років"
+        width="1920"
+        height="2560"
+        loading="lazy"
+        />
+      </figure>
     </article>
   </div>
 </section>
+
 <section class="university" id="university">
   <div class="university__container">
     <h2 class="university__title">Освіта: університет</h2>
 
     <article class="university__content">
-      <h3 class="university__name">
-        Львівський національний університет імені Івана Франка
-      </h3>
+      <figure class="university__photo">
+        <img
+        class="university__image"
+        src="img/university.jpg"
+        alt="Львівський національний університет імені Івана Франка"
+        width="1920"
+        height="2560"
+        loading="lazy"
+        />
+      </figure>
 
-      <p class="university__faculty">
-        Факультет прикладної математики та інформатики
-      </p>
+      <div class="university__info">
+        <h3 class="university__name">
+          Львівський національний університет імені Івана Франка
+        </h3>
 
-      <p class="university__specialty">
-        Спеціальність — «Прикладна математика»
-      </p>
+        <p class="university__faculty">
+          Факультет прикладної математики та інформатики
+        </p>
 
-      <p class="university__course">
-        3 курс
-      </p>
+        <p class="university__specialty">
+          Спеціальність — «Прикладна математика»
+        </p>
 
-      <p class="university__description">
-        Під час навчання вивчаю математичні та інформаційні дисципліни.
-        Серед напрямів, з якими вже працювала, — програмування,
-        математичне моделювання та вебтехнології.
-      </p>
+        <p class="university__course">
+          3 курс
+        </p>
+
+        <p class="university__description">
+          Під час навчання вивчаю математичні та інформаційні дисципліни.
+          Серед напрямів, з якими вже працювала, — програмування,
+          математичне моделювання та вебтехнології.
+        </p>
+
+        <aside class="university__aside">
+        <p>
+            Найбільше мене цікавлять вебпрограмування, бази даних та робота з дизайном.
+        </p>
+        </aside>
+      </div>
     </article>
   </div>
 </section>
+
 <section class="subjects" id="subjects">
   <div class="subjects__container">
     <h2 class="subjects__title">Улюблені навчальні предмети</h2>
@@ -277,54 +323,110 @@
     </div>
   </div>
 </section>
+
 <section class="hobbies" id="hobbies">
   <div class="hobbies__container">
-    <h2 class="hobbies__title">Хобі та захоплення</h2>
+    <h2 class="hobbies__title">Мої хобі та захоплення</h2>
 
-    <div class="hobbies__grid">
-      <article class="hobbies__card">
-        <h3 class="hobbies__name">Читання</h3>
-        <p class="hobbies__description">
-          Люблю фентезі та романтичні історії, особливо книги 
-          з атмосферним світом, сильними персонажами та захопливим
-           сюжетом. Найбільше люблю книги, які захоплюють 
-           настільки, що від них важко відірватися.
-        </p>
-      </article>
+    <div class="hobbies__text">
+      <p class="hobbies__intro">
+        У вільний час я люблю змінювати вид діяльності та знаходити час для того,
+        що приносить мені задоволення. Мені подобається читати, особливо фентезі
+        та романтичні історії, малювати по номерах, гуляти й відкривати нові місця.
+        Люблю подорожі та активний відпочинок. А ще люблю готувати, проводити час
+        із друзями, співати в хорі та просто ловити красиві моменти на фото.
+      </p>
 
-      <article class="hobbies__card">
-        <h3 class="hobbies__name">Подорожі</h3>
-        <p class="hobbies__description">
-          Люблю відкривати нові місця, досліджувати міста та 
-          подорожувати. Особливо подобаються поїздки в Карпати, 
-          походи в гори та відпочинок біля моря. Ціную красиві 
-          краєвиди, атмосферні прогулянки та нові враження від
-           кожної подорожі.
-        </p>
-      </article>
+      <p class="hobbies__intro">
+        Крім того, люблю працювати з квітами, які ростуть удома в саду, і створювати
+        з них різні гарні букети. Водіння приносить мені неймовірні емоції, відчуття
+        свободи та швидкості. А ще один мій більш прихований талант — іноді, коли
+        з’являється натхнення, я пишу вірші, але здебільшого ці рядки залишаються
+        в нотатках або на сторінках зошита.
+      </p>
 
-      <article class="hobbies__card">
-        <h3 class="hobbies__name">Готування</h3>
-        <p class="hobbies__description">
-          Люблю пробувати нові рецепти та готувати страви для себе і 
-          близьких. Для мене готування — це ще й можливість проявити 
-            творчість та приємно провести час.
-        </p>
-      </article>
-
-      <article class="hobbies__card">
-        <h3 class="hobbies__name">Дизайн</h3>
-        <p class="hobbies__description">
-          Цікавлюся UI/UX-дизайном, роботою у Figma та створенням
-           візуально приємних інтерфейсів. Подобається працювати з 
-           кольорами та різними елементами дизайну. 
-           Хочу надалі розвиватися в цьому напрямку 
-           та покращувати свої навички.
-        </p>
-      </article>
+      <p class="hobbies__intro">
+        Загалом я люблю займатися різними речами у вільний час — головне, щоб цей
+        вільний час був :)
+      </p>
     </div>
+
+    <div class="hobbies__gallery">
+  <img
+    class="hobbies__image"
+    src="img/hobby-1.jpg"
+    alt="Мій вірш"
+    width="1080"
+    height="1920"
+    loading="lazy"
+  />
+
+  <img
+    class="hobbies__image"
+    src="img/hobby-2.jpg"
+    alt="Фото з мого дозвілля"
+    width="1280"
+    height="960"
+    loading="lazy"
+  />
+
+  <img
+    class="hobbies__image"
+    src="img/hobby-3.jpg"
+    alt="Фото з мого дозвілля"
+    width="1179"
+    height="1994"
+    loading="lazy"
+  />
+
+  <img
+    class="hobbies__image"
+    src="img/hobby-4.jpg"
+    alt="Фото з мого дозвілля"
+    width="1920"
+    height="2560"
+    loading="lazy"
+  />
+
+  <img
+    class="hobbies__image"
+    src="img/hobby-5.jpg"
+    alt="Фото з мого дозвілля"
+    width="2190"
+    height="2560"
+    loading="lazy"
+  />
+
+  <img
+    class="hobbies__image"
+    src="img/hobby-6.jpg"
+    alt="Фото з мого дозвілля"
+    width="1920"
+    height="2560"
+    loading="lazy"
+  />
+
+  <img
+    class="hobbies__image"
+    src="img/hobby-7.jpg"
+    alt="Фото з мого дозвілля"
+    width="1920"
+    height="2560"
+    loading="lazy"
+  />
+
+  <img
+    class="hobbies__image"
+    src="img/hobby-8.jpg"
+    alt="Фото з мого дозвілля"
+    width="1920"
+    height="2560"
+    loading="lazy"
+  />
+</div>
   </div>
 </section>
+
 <section class="books" id="books">
   <div class="books__container">
     <h2 class="books__title">Улюблені книги</h2>
@@ -372,43 +474,51 @@
     </div>
     <div class="books__table-wrapper">
         <div class="books__covers">
+            <img
+                class="books__cover"
+                src="img/book-blood-and-ash.jpg"
+                alt="Обкладинка книги Із крові і попелу"
+                width="544"
+                height="840"
+                loading="lazy"
+            />
 
-  <img
-    class="books__cover"
-    src="img/book-blood-and-ash.jpg"
-    alt="Обкладинка книги Із крові і попелу"
-    loading="lazy"
-  />
+            <img
+                class="books__cover"
+                src="img/book-kingdom-flesh-fire.jpg"
+                alt="Обкладинка книги Королівство плоті й вогню"
+                width="1587"
+                height="2431"
+                loading="lazy"
+            />
 
-  <img
-    class="books__cover"
-    src="img/book-kingdom-flesh-fire.jpg"
-    alt="Обкладинка книги Королівство плоті й вогню"
-    loading="lazy"
-  />
+            <img
+                class="books__cover"
+                src="img/book-fourth-wing.jpg"
+                alt="Обкладинка книги Четверте крило"
+                width="258"
+                height="380"
+                loading="lazy"
+            />
 
-  <img
-    class="books__cover"
-    src="img/book-fourth-wing.jpg"
-    alt="Обкладинка книги Четверте крило"
-    loading="lazy"
-  />
+            <img
+                class="books__cover"
+                src="img/book-iron-flame.jpg"
+                alt="Обкладинка книги Залізне полум’я"
+                width="250"
+                height="362"
+                loading="lazy"
+            />
 
-  <img
-    class="books__cover"
-    src="img/book-iron-flame.jpg"
-    alt="Обкладинка книги Залізне полум’я"
-    loading="lazy"
-  />
-
-  <img
-    class="books__cover"
-    src="img/book-stay-close.jpg"
-    alt="Обкладинка книги Залишся поряд"
-    loading="lazy"
-  />
-
-</div>
+            <img
+                class="books__cover"
+                src="img/book-stay-close.jpg"
+                alt="Обкладинка книги Залишся поряд"
+                width="506"
+                height="840"
+                loading="lazy"
+            />
+        </div>
   <table class="books__table">
     <caption class="books__table-caption">
       Коротко про мої улюблені книги
@@ -541,9 +651,10 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
-</div>
-</div>
-  </div>
+    </div>
+    </div>
+     </div>
+   </div>
 </section>
 
 <section class="movies" id="movies">
@@ -554,12 +665,13 @@
 
   <article class="movies__card">
     <img
-      class="movies__poster"
-      src="img/movie-midnight-sun.jpg"
-      alt="Постер фільму Опівнічне сонце"
-      loading="lazy"
+    class="movies__poster"
+    src="img/movie-midnight-sun.jpg"
+    alt="Постер фільму Опівнічне сонце"
+    width="1001"
+    height="1566"
+    loading="lazy"
     />
-
     <h3 class="movies__name">Метелик (Опівнічне сонце)</h3>
     <p class="movies__year">2018</p>
     <p class="movies__rating">Оцінка: 9/10</p>
@@ -570,11 +682,13 @@
   </article>
 
   <article class="movies__card">
-    <img
-      class="movies__poster"
-      src="img/movie-titanic.jpg"
-      alt="Постер фільму Титанік"
-      loading="lazy"
+   <img
+    class="movies__poster"
+    src="img/movie-titanic.jpg"
+    alt="Постер фільму Титанік"
+    width="266"
+    height="380"
+    loading="lazy"
     />
 
     <h3 class="movies__name">Титанік</h3>
@@ -588,10 +702,12 @@
 
   <article class="movies__card">
     <img
-      class="movies__poster"
-      src="img/movie-dogs-purpose.jpg"
-      alt="Постер фільму Життя і мета собаки"
-      loading="lazy"
+        class="movies__poster"
+        src="img/movie-dogs-purpose.jpg"
+        alt="Постер фільму Життя і мета собаки"
+        width="1080"
+        height="1620"
+        loading="lazy"
     />
 
     <h3 class="movies__name">Життя і мета собаки</h3>
@@ -604,11 +720,13 @@
   </article>
 
   <article class="movies__card">
-    <img
-      class="movies__poster"
-      src="img/movie-magnificent-century.jpg"
-      alt="Постер серіалу Величне століття: Роксолана"
-      loading="lazy"
+   <img
+        class="movies__poster"
+        src="img/movie-magnificent-century.jpg"
+        alt="Постер серіалу Величне століття: Роксолана"
+        width="250"
+        height="350"
+        loading="lazy"
     />
 
     <h3 class="movies__name">Величне століття: Роксолана</h3>
@@ -620,7 +738,7 @@
       неймовірними костюмами.
     </p>
   </article>
-  
+
 </div>
   </div>
 </section>
@@ -658,7 +776,9 @@
             class="sport__image"
             src="img/sport.jpg"
             alt="Похід у гори"
-             loading="lazy"
+            width="2560"
+            height="1920"
+            loading="lazy"
         />
 
         <figcaption class="sport__caption">
@@ -683,10 +803,12 @@
 
   <figure class="travel__item">
     <img
-      class="travel__image"
-      src="img/travel-carpathians.jpg"
-      alt="Карпати"
-      loading="lazy"
+         class="travel__image"
+        src="img/travel-carpathians.jpg"
+        alt="Карпати"
+        width="1920"
+        height="2560"
+        loading="lazy"
     />
 
     <figcaption class="travel__caption">
@@ -701,10 +823,12 @@
 
   <figure class="travel__item">
     <img
-      class="travel__image"
-      src="img/travel-croatia.jpg"
-      alt="Узбережжя Хорватії"
-      loading="lazy"
+        class="travel__image"
+        src="img/travel-croatia.jpg"
+        alt="Узбережжя Хорватії"
+        width="960"
+        height="1280"
+        loading="lazy"
     />
 
     <figcaption class="travel__caption">
@@ -720,10 +844,12 @@
 
   <figure class="travel__item">
     <img
-      class="travel__image"
-      src="img/travel-lviv.jpg"
-      alt="Львів"
-      loading="lazy"
+        class="travel__image"
+        src="img/travel-lviv.jpg"
+        alt="Львів"
+        width="960"
+        height="1280"
+        loading="lazy"
     />
 
     <figcaption class="travel__caption">
@@ -737,6 +863,44 @@
   </figure>
 
 </div>
+  </div>
+</section>
+
+<section class="pet" id="pet">
+  <div class="pet__container">
+    <h2 class="pet__title">Мій улюбленець</h2>
+
+    <article class="pet__content">
+      <div class="pet__info">
+        <h3 class="pet__name">Бакс</h3>
+
+        <p class="pet__description">
+          Бакс — мій лабрадор і справжній член сім’ї.
+          Він дуже добрий, активний і завжди створює хороший настрій.
+          Любить прогулянки, увагу та бути поруч із рідними. 
+        </p>
+      </div>
+
+      <div class="pet__gallery">
+        <img
+          class="pet__image"
+        src="img/baks-1.jpg"
+        alt="Лабрадор Бакс"
+        width="1920"
+        height="2560"
+        loading="lazy"
+        />
+
+        <img
+         class="pet__image"
+        src="img/baks-2.jpg"
+        alt="Бакс на прогулянці"
+        width="1920"
+        height="2560"
+        loading="lazy"
+        />
+      </div>
+    </article>
   </div>
 </section>
 
@@ -779,6 +943,7 @@
     </div>
   </div>
 </section>
+
 <section class="goals" id="goals">
   <div class="goals__container">
     <h2 class="goals__title">Цілі на найближчий рік</h2>
@@ -905,9 +1070,11 @@
 
   <blockquote class="quote__text">
     <p>
-      Не обов’язково бачити весь шлях. Достатньо знати, у якому напрямку
-      хочеш рухатися, і не боятися зробити наступний крок.
+      І все на світі треба пережити,І кожен фініш – це,
+       по суті, старт,І наперед не треба ворожити,І 
+       за минулим плакати не варт
     </p>
+    <cite>Ліна Костенко</cite>
   </blockquote>
 
   <blockquote class="quote__text">
@@ -915,6 +1082,7 @@
       Не бійся починати з малого. Великі результати складаються
       з маленьких кроків, які ти робиш щодня.
     </p>
+    <cite>Мотиваційна цитата</cite>
   </blockquote>
 
   <blockquote class="quote__text">
@@ -922,6 +1090,7 @@
       Розвиток починається там, де з’являється бажання спробувати
       те, чого ти ще не вмієш.
     </p>
+    <cite>Мотиваційна цитата</cite>
   </blockquote>
 
 </div>
@@ -937,47 +1106,74 @@
     </p>
 
     <form class="contacts__form" action="#" method="post">
-      <div class="contacts__field">
-        <label class="contacts__label" for="name">Ім'я</label>
-       <input
-        class="contacts__input"
-        type="text"
-        id="name"
-        name="name"
-        autocomplete="name"
-        minlength="2"
-        required
-        />
-      </div>
+  <div class="contacts__field">
+    <label class="contacts__label" for="name">Ім'я</label>
+    <input
+      class="contacts__input"
+      type="text"
+      id="name"
+      name="name"
+      autocomplete="name"
+      minlength="2"
+      pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ' -]{2,}"
+      required
+    />
+  </div>
 
-      <div class="contacts__field">
-        <label class="contacts__label" for="email">Email</label>
-        <input
-          class="contacts__input"
-          type="email"
-          id="email"
-          name="email"
-          autocomplete="email"
-          required
-        />
-      </div>
+  <div class="contacts__field">
+    <label class="contacts__label" for="email">Email</label>
+    <input
+      class="contacts__input"
+      type="email"
+      id="email"
+      name="email"
+      autocomplete="email"
+      required
+    />
+  </div>
 
-      <div class="contacts__field">
-        <label class="contacts__label" for="message">Повідомлення</label>
-       <textarea
-        class="contacts__textarea"
-        id="message"
-        name="message"
-        rows="5"
-        minlength="10"
-        required
-        ></textarea>
-      </div>
+  <div class="contacts__field">
+    <label class="contacts__label" for="subject">Тема</label>
+    <select
+      class="contacts__select"
+      id="subject"
+      name="subject"
+      required
+    >
+      <option value="" selected disabled>Оберіть тему</option>
+      <option value="study">Навчання</option>
+      <option value="work">Робота</option>
+      <option value="project">Проєкт</option>
+      <option value="other">Інше</option>
+    </select>
+  </div>
 
-      <button class="contacts__button" type="submit">
-        Надіслати
-      </button>
-    </form>
+  <div class="contacts__field">
+    <label class="contacts__label" for="message">Повідомлення</label>
+    <textarea
+      class="contacts__textarea"
+      id="message"
+      name="message"
+      rows="5"
+      minlength="10"
+      required
+    ></textarea>
+  </div>
+
+  <label class="contacts__consent">
+    <input
+      class="contacts__checkbox"
+      type="checkbox"
+      name="consent"
+      required
+    />
+    <span>Я погоджуюся на обробку введених даних.</span>
+  </label>
+
+  <button class="contacts__button" type="submit">
+    Надіслати
+  </button>
+</form>
   </div>
 </section>
 
@@ -987,7 +1183,7 @@
 
     <div class="footer__top">
       <div class="footer__info">
-        <a class="footer__logo" href="#top">ТВ</a>
+        <a class="footer__logo" href="#top">ТБ</a>
 
         <p class="footer__text">
           Дякую, що переглянули моє портфоліо.
